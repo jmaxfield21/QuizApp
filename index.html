@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Manchester United Quiz</title>
+		<link rel="icon" type="img/png" href="img/mu.png">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="title_container">
+				<h3 id="title">Manchester United Quiz</h3>
+			</div>
+			<div class="content">
+				<div class="main">
+					<div class="text_left">
+						<p>
+							Welcome to the Manchester United Quiz App! This be a small test of your knowledge of the 20 time English Premier League Champions!
+						</p>
+						<button class="button">START</button>
+					</div>
+				</div>
+				<div class="question1">
+					<h4>Who is this man?</h4>
+					<form id="question1form">
+						<input name="manager" type="radio">Sir Matt Busby
+						<br>
+						<input name="manager" type="radio">Sir Alex Ferguson
+						<br>
+						<input name="manager" type="radio">Mark Hughes
+						<br>
+						<input name="manager" type="radio">Sir Bobby Charlton
+						<br>
+						<button type="submit" class="button">Submit</button>
+					</form>
+				</div>
+				<div class="question2">
+					<p>
+						In the 1999 Champion's League Final, Manchester United overcame a 1-0 deficit to win 2-1 in the final 2 minutes of added time. Who scored the equalizing goal?
+					</p>
+					<form id="question2form">
+						<input name="equalizer" type="radio">Teddy Sheringham
+						<br>
+						<input name="equalizer" type="radio">David Beckham
+						<br>
+						<input name="equalizer" type="radio">Andy Cole
+						<br>
+						<input name="equalizer" type="radio">Ole Gunnar Solskjaer
+						<br>
+						<button type="submit" class="button">Submit</button>
+					</form>
+				</div>
+				<div class="question3">
+					<div class="black_overlay">
+						<p class="text_left">
+							What Manchester United player is referred to as the <strong>'most decorated'</strong> in English Football?
+						</p>
+						<form id="question3form">
+							<input name="decorated" type="radio">George Best
+							<br>
+							<input name="decorated" type="radio">Sir Bobby Charlton
+							<br>
+							<input name="decorated" type="radio">Eric Cantona
+							<br>
+							<input name="decorated" type="radio">Ryan Giggs
+							<br>
+							<button type="submit" class="button">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="question4">
+					<p>Wayne Rooney debuted for Manchester United at age 18 in the Champion's League. Against which team did he score is debut hat-trick?</p>
+					<form id="question4form">
+						<input name="hat-trick" type="radio">FC Schalke
+						<br>
+						<input name="hat-trick" type="radio">Fenerbahce
+						<br>
+						<input name="hat-trick" type="radio">Napoli
+						<br>
+						<input name="hat-trick" type="radio">FC Barcelona
+						<br>
+						<button type="submit" class="button">Submit</button>
+					</form>
+				</div>
+				<div class="question5">
+					<div class="black_overlay">
+						<p class="text_center">
+							Manchester United's stadium holds over 70,000 people and is nicknamed <strong>'The Theatre of Dreams'</strong>. What is it's real name?
+						</p>
+						<form id="question5form">
+							<input name="stadium" type="radio">Anfield
+							<br>
+							<input name="stadium" type="radio">Highbury
+							<br>
+							<input name="stadium" type="radio">Stamford Bridge
+							<br>
+							<input name="stadium" type="radio">Old Trafford
+							<br>
+							<button type="submit" class="button">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="review">
+					<div class="black_overlay">
+						<ul class="clearfix">
+							<li><h4>HERE ARE YOUR RESULTS!</h4></li>
+							<li><h4>SCORE: <span></span></h4></li>
+						</ul>						
+						<ol>
+							<li>
+								<p>Question 1</p>
+								<p>Who is this man?</p>
+								<ul class="clearfix">
+									<li>
+										<p>You answered <span class="answer1"></span></p>
+									</li>
+									<li>
+										<p>Correct answer: <span>Sir Alex Ferguson</span></p>	
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Question 2</p>
+								<p>Who scored the equalizing goal in the 99 Champion's League Final?</p>
+								<ul class="clearfix">
+									<li>
+										<p>You answered <span class="answer2"></span></p>
+									</li>
+									<li>
+										<p>Correct answer: <span>Teddy Sheringham</span></p>	
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Question 3</p>
+								<p>What Manchester United player is referred to as the <strong>'most decorated'</strong> in English Football?</p>
+								<ul class="clearfix">
+									<li>
+										<p>You answered <span class="answer3"></span></p>
+									</li>
+									<li>
+										<p>Correct answer: <span>Ryan Giggs</span></p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Question 4</p>
+								<p>Against which team did Rooney score is debut hat-trick?</p>
+								<ul class="clearfix">
+									<li>
+										<p>You answered: <span class="answer4"></span></p>
+									</li>
+									<li>
+										<p>Correct answer: <span>Fenerbahce</span></p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<p>Question 5</p>
+								<p>What is the stadium's real name?</p>
+								<ul class="clearfix">
+									<li>
+										<p>You answered: <span class="answer5"></span></p>
+									</li>
+									<li>
+										<p>Correct answer: <span>Old Trafford</span></p>
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+				<!-- <div class="question6"></div>
+				<div class="question7"></div>
+				<div class="question8"></div>
+				<div class="question9"></div>
+				<div class="question10"></div> -->

@@ -1,0 +1,284 @@
+body {
+	background: url("../img/believe.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	font-family: 'Droid Sans', sans-serif;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+p {
+	font-size: 1.3em;
+	color: white;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.wrapper {
+	width: 700px;
+	height: 500px;
+	margin-top: 45px;
+	margin-left:auto;
+	margin-right: auto;
+	background-color: rgba(250, 250, 250, 0.8);
+}
+
+.title_container {
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	text-shadow: 2px 2px gray;
+	padding-top: 10px;
+	background-color: red;
+	color: white;
+}
+
+.content {
+	width: inherit;
+	height: 450px;
+	position: relative;
+}
+
+.text_left {
+	padding-top: 85px;
+	padding-left: 25px;
+	text-align: left;
+	width: 150px;
+	line-height: 1.5em;
+}
+
+/* Questions that could be added */
+/* .question6, .question7,
+.question8, .question9, .question10 */
+
+.main, .question1, .question2, .question3,
+.question4, .question5, .review {
+	width: 100%;
+	height: inherit;
+}
+
+.main {
+	background: url("../img/rooney1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+.question1 {
+	background: url("../img/siralex.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+	display: none;
+}
+
+.question1 h4 {
+	padding-top: 83px;
+	padding-left: 25px;
+}
+
+#question1form {
+	display: block;
+	float: right;
+	padding-right: 15px;
+	margin-top: -55px;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+.question2 {
+	background: url("../img/99champs.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+.question2 p {
+	padding-left: 40px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+#question2form {
+	color: white;
+	line-height: 1.3em;
+	padding-left: 55px;
+	font-size: 1.2em;
+}
+
+.black_overlay {
+	height: inherit;
+	width: inherit;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.question3 {
+	background: url("../img/statue.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+.question3 p {
+	padding-top: 122px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#question3form {
+	float: right;
+	color: white;
+	margin-top: -220px;
+	padding-right: 25px;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+
+.question4 {
+	background: url("../img/rooney_hattrick.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+.question4 p {
+	padding: 25px;
+	line-height: 1.3em;
+}
+
+#question4form {
+	color: white;
+	float: right;
+	padding-right: 150px;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
+.question5 {
+	background: url("../img/theatreofdreams.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: none;
+}
+
+#question5form, .text_center {
+	width: 450px;
+	margin: 0 auto;
+}
+
+#question5form {
+	color: white;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+
+.text_center {
+	padding-top: 80px;
+	padding-bottom: 15px;
+}
+
+.review {
+	background: url("../img/champions.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;	
+}
+
+.review h4 {
+	color: white;
+	padding: 15px;
+}
+
+.review span {
+	color: red;
+	font-weight: 700;
+}
+
+.review p {
+	font-size: 1.1em;
+}
+
+.review ol li {
+	padding: 5px;
+}
+
+.review ul li {
+	display: inline-block;
+}
+
+.review ul li:first-child {
+	float: left;
+}
+
+.review ul li:last-child {
+	float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.button {
+	background-color: red;
+	color: white;
+	margin-top: 15px;
+	border: none;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.3em;
+	border-radius: 4px;
+	padding: 5px 15px;
+	font-weight: 700;
+}
+
+.button:hover {
+	background-color: white;
+	color: red;
+}
+
+
+
+/*.question6 {
+	background: url("../img/");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.question7 {
+	background: url("../img/");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.question8 {
+	background: url("../img/");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.question9 {
+	background: url("../img/");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.question10 {
+	background: url("../img/");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+*/
