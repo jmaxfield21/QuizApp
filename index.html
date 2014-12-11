@@ -7,6 +7,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/app.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -20,7 +22,7 @@
 							<p>
 								Welcome to the Manchester United Quiz App! This be a small test of your knowledge of the 20 time English Premier League Champions!
 							</p>
-							<button class="button">START</button>
+							<button id="start" class="button">START</button>
 						</div>
 					</div>
 				</div>
@@ -28,13 +30,13 @@
 					<div class="black_overlay">
 						<h4>Who is this man?</h4>
 						<form id="question1form">
-							<input name="manager" type="radio">Sir Matt Busby
+							<input name="manager" type="radio" value="busby">Sir Matt Busby
 							<br>
-							<input name="manager" type="radio">Sir Alex Ferguson
+							<input name="manager" type="radio" value="ferguson">Sir Alex Ferguson
 							<br>
-							<input name="manager" type="radio">Mark Hughes
+							<input name="manager" type="radio" value="hughes">Mark Hughes
 							<br>
-							<input name="manager" type="radio">Sir Bobby Charlton
+							<input name="manager" type="radio" value="charlton">Sir Bobby Charlton
 							<br>
 							<button type="submit" class="button">Submit</button>
 						</form>
@@ -46,13 +48,13 @@
 							In the 1999 Champion's League Final, Manchester United overcame a 1-0 deficit to win 2-1 in the final 2 minutes of added time. Who scored the equalizing goal?
 						</p>
 						<form id="question2form">
-							<input name="equalizer" type="radio">Teddy Sheringham
+							<input name="equalizer" type="radio" value="teddy">Teddy Sheringham
 							<br>
-							<input name="equalizer" type="radio">David Beckham
+							<input name="equalizer" type="radio" value="david">David Beckham
 							<br>
-							<input name="equalizer" type="radio">Andy Cole
+							<input name="equalizer" type="radio" value="andy">Andy Cole
 							<br>
-							<input name="equalizer" type="radio">Ole Gunnar Solskjaer
+							<input name="equalizer" type="radio" value="ole">Ole Gunnar Solskjaer
 							<br>
 							<button type="submit" class="button">Submit</button>
 						</form>
@@ -64,13 +66,13 @@
 							What Manchester United player is referred to as the <strong>'most decorated'</strong> in English Football?
 						</p>
 						<form id="question3form">
-							<input name="decorated" type="radio">George Best
+							<input name="decorated" type="radio" value="best">George Best
 							<br>
-							<input name="decorated" type="radio">Sir Bobby Charlton
+							<input name="decorated" type="radio" value="charlton">Sir Bobby Charlton
 							<br>
-							<input name="decorated" type="radio">Eric Cantona
+							<input name="decorated" type="radio" value="cantona">Eric Cantona
 							<br>
-							<input name="decorated" type="radio">Ryan Giggs
+							<input name="decorated" type="radio" value="giggs">Ryan Giggs
 							<br>
 							<button type="submit" class="button">Submit</button>
 						</form>
@@ -80,13 +82,13 @@
 					<div class="black_overlay">
 						<p>Wayne Rooney debuted for Manchester United at age 18 in the Champion's League. Against which team did he score is debut hat-trick?</p>
 						<form id="question4form">
-							<input name="hat-trick" type="radio">FC Schalke
+							<input name="hat-trick" type="radio" value="schalke">FC Schalke
 							<br>
-							<input name="hat-trick" type="radio">Fenerbahce
+							<input name="hat-trick" type="radio" value="fenerbahce">Fenerbahce
 							<br>
-							<input name="hat-trick" type="radio">Napoli
+							<input name="hat-trick" type="radio" value="napoli">Napoli
 							<br>
-							<input name="hat-trick" type="radio">FC Barcelona
+							<input name="hat-trick" type="radio" value="barcelona">FC Barcelona
 							<br>
 							<button type="submit" class="button">Submit</button>
 						</form>
@@ -98,13 +100,13 @@
 							Manchester United's stadium holds over 70,000 people and is nicknamed <strong>'The Theatre of Dreams'</strong>. What is it's real name?
 						</p>
 						<form id="question5form">
-							<input name="stadium" type="radio">Anfield
+							<input name="stadium" type="radio" value="anfield">Anfield
 							<br>
-							<input name="stadium" type="radio">Highbury
+							<input name="stadium" type="radio" value="highbury">Highbury
 							<br>
-							<input name="stadium" type="radio">Stamford Bridge
+							<input name="stadium" type="radio" value="stamford">Stamford Bridge
 							<br>
-							<input name="stadium" type="radio">Old Trafford
+							<input name="stadium" type="radio" value="trafford">Old Trafford
 							<br>
 							<button type="submit" class="button">Submit</button>
 						</form>
@@ -114,7 +116,7 @@
 					<div class="black_overlay">
 						<ul class="clearfix">
 							<li><h4>HERE ARE YOUR RESULTS!</h4></li>
-							<li><h4>SCORE: <span></span></h4></li>
+							<li><h4>SCORE: <span id="score"></span></h4></li>
 						</ul>						
 						<ol>
 							<li>
