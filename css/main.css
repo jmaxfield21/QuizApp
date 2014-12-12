@@ -1,5 +1,5 @@
 body {
-	background: url("../img/believe.jpg");
+	background: url("../img/believe.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 
@@ -56,6 +56,14 @@ strong {
 	line-height: 1.5em;
 }
 
+.question3 p {
+	padding-top: 85px;
+	padding-left: 45px;
+	text-align: left;
+	width: 150px;
+	line-height: 1.5em;
+}
+
 /* Questions that could be added */
 /* .question6, .question7,
 .question8, .question9, .question10 */
@@ -81,7 +89,7 @@ strong {
 	display: none;
 }
 
-.question1 h4 {
+.question1 p {
 	padding-top: 83px;
 	padding-left: 25px;
 }
@@ -171,7 +179,7 @@ strong {
 	display: none;
 }
 
-#question5form, .text_center {
+#question5form, .question5 p {
 	width: 450px;
 	margin: 0 auto;
 }
@@ -182,7 +190,7 @@ strong {
 	font-size: 1.2em;
 }
 
-.text_center {
+.question5 p {
 	padding-top: 80px;
 	padding-bottom: 15px;
 }
