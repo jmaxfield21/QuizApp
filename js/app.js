@@ -151,7 +151,7 @@ function createForm() {
 		$('form').append('<input type="radio" name="q" ' 
 			+ ' value="' + arr[i] + '">' + getAnswerValue(arr[i]) + '<br>')
 	}
-	$('form').append('<button class="button">Submit</button>');
+	$('form').append('<button type="submit" class="button">Submit</button>');
 }
 
 function setCurrentSlide( slide ) {
